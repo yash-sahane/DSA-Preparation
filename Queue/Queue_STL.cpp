@@ -22,6 +22,10 @@ main()
     cout << "front is " << q.front() << endl;
     cout << "back is " << q.back() << endl;
 
+    q.pop();
+    cout << "front is " << q.front() << endl;
+    cout << "back is" << q.back() << endl;
+
     if (q.empty())
     {
         cout << "queue is empty" << endl;
