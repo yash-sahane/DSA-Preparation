@@ -1,3 +1,5 @@
+// GFG - queue reversal
+
 void solve(queue<int> &q)
 {
     if (q.empty())

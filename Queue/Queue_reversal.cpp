@@ -1,3 +1,5 @@
+// GFG - queue reversal
+
 queue<int> rev(queue<int> q)
 {
     stack<int> s;
