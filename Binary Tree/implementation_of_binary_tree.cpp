@@ -43,20 +43,31 @@ void levelOrderTraversal(Node *root)
 {
     queue<Node *> queue;
     queue.push(root);
+    queue.push(NULL);
 
     while (!queue.empty())
     {
         Node *temp = queue.front();
-        cout << temp->data << " ";
         queue.pop();
-
-        if (temp->left)
+        if (temp == NULL)
         {
-            queue.push(temp->left);
+            cout << endl;
+            if (!queue.empty())
+            {
+                queue.push(NULL);
+            }
         }
-        if (temp->right)
+        else
         {
-            queue.push(temp->right);
+            cout << temp->data << " ";
+            if (temp->left)
+            {
+                queue.push(temp->left);
+            }
+            if (temp->right)
+            {
+                queue.push(temp->right);
+            }
         }
     }
 }
