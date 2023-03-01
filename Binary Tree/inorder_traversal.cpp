@@ -1,6 +1,5 @@
 vector<int> inOrder(Node *root)
 {
-
     vector<int> result;
     if (root == NULL)
     {
